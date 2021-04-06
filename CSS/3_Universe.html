@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background : #222;
+        }
+        @keyframes InfiniteDoor{
+                to{
+                    background-position: -2550px 0px; /* 이미지가 움직이는 거라서 x축 방향에 -가 붙은 */ 
+                }
+            }
+        .UniverseDoor{
+            width: 150px;
+            height: 150px;
+            background : url('1_Transfrom_and_animation 자료/images/sprite_spaceship.png') no-repeat 0 0 / auto 150px;
+            animation: InfiniteDoor 1s infinite steps(17);
+            /* steps : 몇 번의 단계를 거칠 것인가 */
+        }
+    </style>
+</head>
+<body>
+    <div class="UniverseDoor"></div>
+</body>
+</html>

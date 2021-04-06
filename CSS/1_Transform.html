@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-container{
+            display: flex;
+        }
+        .box_size, .box_px{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: rgba(255, 255, 0, 0.7);
+            transition: 1s cubic-bezier(0.25, 0.1, 0, 2.65) 0.5s;
+        }
+        .box_size:hover{
+            /* transform: scale(2) rotate(45deg);
+            transform: translate(30px, 10px) translateY(-30px);
+            transform-origin: right top;
+            transform-origin: 100% 100%; */
+            transform: scale(2);
+            background-color: rgba(255, 53, 53, 0.7);
+        }
+        .box_px:hover{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS3 Transfrom</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed veniam maiores quibusdam ratione, ad dolore. Exercitationem ea quisquam aperiam, consequatur aliquid commodi similique quidem rem quam doloribus cum mollitia nesciunt saepe ex, possimus consectetur esse repellat ullam ipsa ducimus necessitatibus sapiente sequi velit? Rerum numquam explicabo iure eaque porro laboriosam maxime possimus quia exercitationem voluptatum quos doloribus accusamus nam at neque tempore voluptas qui minus quod necessitatibus non, sequi eius dolore id. Tempora fugit nulla dolores dignissimos, reiciendis iure aspernatur a expedita, placeat eius vel quos porro! Non nesciunt amet dicta, est similique harum quae voluptate cum quis eligendi officia.
+    </p>
+    <div class="box-container">
+        <div class="box_size">A</div>
+        <div class="box_size">B</div>
+        <div class="box_size">C</div>
+        <div class="box_px">D</div>
+        <div class="box_px">E</div>
+    </div>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quaerat quidem atque molestias excepturi libero hic, cupiditate ullam ratione repellendus doloremque, dolore sint! Facere sed eius quod provident saepe ad! Voluptatem repellat quia hic culpa laborum vel voluptas dicta eaque. Quae magni, libero explicabo molestiae maxime quo non ipsam nulla sit, illum nemo exercitationem, similique animi sed autem deserunt quidem fugit nobis labore maiores ab dolorum voluptatum aut error! Quod sint soluta enim ratione quae distinctio! Repellendus exercitationem dolorem aliquam consectetur voluptatum, officia eveniet commodi esse. Minus neque ipsa molestiae cumque voluptatibus natus, laborum dolorem. Labore magni inventore vitae repudiandae.
+    </p>
+</body>
+</html>

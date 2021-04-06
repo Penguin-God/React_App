@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Wolrd{
+            width: 80vw;
+            height: 60vh;
+            background-color: #fff000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* perspective: 500px; */
+        }
+        .card{
+            width: 100px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            border-radius: 0.5em;
+            font-size: 1.5rem;
+            margin: 1em;
+            transform: perspective(500px) rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="Wolrd">
+        <div class="card">CARD</div>
+        <div class="card">CARD</div>
+        <div class="card">CARD</div>
+    </div>
+</body>
+</html>
