@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes moveX{
+            0% {
+                transform: translateX(0%);
+            }
+            20% {
+                transform: translate(25%);
+            }
+            40% {
+                transform: translate(50%);
+            }
+            60% {
+                transform: translate(75%);
+            }
+            80% {
+                transform: translate(100%);
+            }
+            100% {
+                transform: translate(110%);
+            }
+        }
+        .imgCord{
+            overflow: hidden;
+            height: 60vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .moveImgs{
+            width: 100%;
+            height: 100%;
+            line-height: 1;
+            /* animation-name: moveX; */
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .moveImage{
+            /* vertical-align: ; */
+            /* background-color: #e5e5e5; */
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgCord">
+        <div class="moveImgs">
+            <img src="img/구름.jpg" alt="" class="moveImage">
+            <img src="img/황혼.jpg" alt="" class="moveImage">
+            <img src="img/은하.jpg" alt="" class="moveImage">
+            <!-- <img src="img/별이_빛나는_밤.jpg.jpg" alt="" class="moveImage"> -->
+            <img src="img/서울하늘.jpg" alt="" class="moveImage" width="300px" height="200px">
+            <img src="img/구름.jpg" alt="" class="moveImage">
+        </div>
+    </div>
+</body>
+</html>
