@@ -6,62 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;    
+        }
         @keyframes moveX{
             0% {
                 transform: translateX(0%);
             }
-            20% {
-                transform: translate(25%);
-            }
-            40% {
-                transform: translate(50%);
-            }
-            60% {
-                transform: translate(75%);
-            }
-            80% {
-                transform: translate(100%);
-            }
             100% {
-                transform: translate(110%);
+                transform: translateX(-153%);
             }
         }
+        /* @keyframes IncreaseSize{
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        } */
         .imgCord{
             overflow: hidden;
             height: 60vh;
             width: 100%;
-            display: flex;
+            /* display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center; */
         }
         .moveImgs{
             width: 100%;
             height: 100%;
-            line-height: 1;
-            /* animation-name: moveX; */
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
+            /* line-height: 1; */
+            /* animation: moveX 3s infinite cubic-bezier(0.01, 0, 1, 1.01); */
             display: flex;
             align-items: center;
-            justify-content: center;
+            /* justify-content: center; */
         }
         .moveImage{
             /* vertical-align: ; */
             /* background-color: #e5e5e5; */
             margin-left: 20%;
         }
+        .firstImage{
+            /* animation: IncreaseSize 1.6s ; */
+            left: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="imgCord">
-        <div class="moveImgs">
+    <div class="imgCord" onclick="ScrollImage()">
+        <div class="moveImgs" id="moveImgs">
+            <img src="img/구름.jpg" alt="" class="firstImage">
+            <img src="img/황혼.jpg" alt="" class="moveImage">
+            <img src="img/은하.jpg" alt="" class="moveImage">
+            <img src="img/서울하늘.jpg" alt="" class="moveImage" width="300px" height="200px">
+
             <img src="img/구름.jpg" alt="" class="moveImage">
             <img src="img/황혼.jpg" alt="" class="moveImage">
             <img src="img/은하.jpg" alt="" class="moveImage">
-            <!-- <img src="img/별이_빛나는_밤.jpg.jpg" alt="" class="moveImage"> -->
             <img src="img/서울하늘.jpg" alt="" class="moveImage" width="300px" height="200px">
-            <img src="img/구름.jpg" alt="" class="moveImage">
         </div>
     </div>
+    <script>
+        function ScrollImage(){
+            document.getElementById("moveImgs").style.animationName = KeyframeEffect;
+            document.getElementById("moveImgs").style.backgroundColor = "red";
+        }
+
+        document.querySelector("#moveImgs").addEventListener("onclick", ScrollImage)
+        console.log(document.getElementById("moveImgs"))
+    </script>
 </body>
 </html>
